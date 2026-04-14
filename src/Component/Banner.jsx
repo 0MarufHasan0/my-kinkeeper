@@ -4,7 +4,7 @@ import { IoIosAdd } from 'react-icons/io';
 const Banner = () => {
     return (
         <div>
-            <div className="hero bg-base-200 min-h-screen">
+            <div className="hero bg-base-200  min-h-[70vh] ">
   <div className="hero-content text-center">
     <div >
       <h1 className="text-5xl font-bold">Friends to keep close in your life</h1>
