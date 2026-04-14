@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "Met during CSE at university. We used to work on coding projects and still share tech ideas.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["office", "team mate"],
+    "bio": "Colleague from my first job. We often discuss career growth and attend workshops together.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 3,
+    "name": "Imran Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+    "email": "imran.hossain@yahoo.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "Met at the gym. We motivate each other to stay consistent with workouts and diet.",
+    "goal": 10,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 4,
+    "name": "Farzana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/72.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "best friend"],
+    "bio": "Best friend since school days. We share everything from life updates to family stories.",
+    "goal": 15,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 5,
+    "name": "Tanvir Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/33.jpg",
+    "email": "tanvir.ahmed@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["startup", "business"],
+    "bio": "Met at a startup event. We occasionally brainstorm business ideas and side projects.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 6,
+    "name": "Sadia Karim",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "sadia.karim@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["family friend"],
+    "bio": "Family friend who lives nearby. We often meet during weekends and family gatherings.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Mahmudul Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/29.jpg",
+    "email": "mahmudul.hasan@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["freelance", "developer"],
+    "bio": "Connected through freelancing platforms. We collaborate on web development projects.",
+    "goal": 12,
+    "next_due_date": "2026-04-11"
+  },
+  {
+    "id": 8,
+    "name": "Ritu Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "ritu.sultana@gmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["travel", "friend"],
+    "bio": "Travel partner for short trips. We explore new places and document our journeys.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  }
+]
