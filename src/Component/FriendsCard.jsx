@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FriendsCard = ({ friend }) => {
   return (
-    <div className="w-full flex justify-center">
+    <Link href={`/${friend.id}`} className="w-full flex justify-center">
       <div
         className="card bg-base-100 w-full max-w-sm sm:max-w-md rounded-2xl shadow-md 
         transition duration-300 ease-in-out 
@@ -54,7 +55,8 @@ const FriendsCard = ({ friend }) => {
           
         </div>
       </div>
-    </div>
+    </Link>
+    
   );
 };
 

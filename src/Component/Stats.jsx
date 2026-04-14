@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
     return (
-        <div className="flex justify-center px-4 animate-bounce">
+        <div className="flex justify-center px-4 animate-none md:animate-bounce">
        <div className="stats stats-vertical sm:stats-vertical md:stats-horizontal shadow max-w-4xl w-full gap-4 md:gap-0">
         
         <div className="stat text-center ">
