@@ -1,3 +1,6 @@
+import Text from '@/Component/Button/Text';
+import VideoCall from '@/Component/Button/VideoCall';
+import Call from '@/Component/Button/Call';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -151,9 +154,13 @@ const page = async({params}) => {
         <h3 className='text-[#244D3F] font-bold'>Quick Check-In</h3>
         <div className='grid md:grid-cols-3 grid-cols-1 mt-5 gap-3'>
 
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"> <VscCallOutgoing /> Call</button>
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"> <MdTextsms />Text</button>
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><IoIosVideocam />Video</button>
+          <Call expactedFriend={expactedFriend}></Call>
+          <Text expactedFriend={expactedFriend}></Text>
+          <VideoCall expactedFriend={expactedFriend}></VideoCall>
+
+            
+
+           
 
         </div>
 
