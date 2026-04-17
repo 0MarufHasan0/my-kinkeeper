@@ -7,24 +7,56 @@ import { MdOutlineVideoCall, MdTextsms } from 'react-icons/md';
 
 
 const Timeline = () => {
-    const {call} =useContext(CallContext)
+    const {call , filter,setFilter} =useContext(CallContext)
+
+    // Short filter 
+
+    const  filtered = filter === "All" ? call : call.filter(item => item.type === filter)
+
+
 
     return (
+<>
+{/* Filter dropdown */}
+    <div className='container flex justify-start mx-2  md:justify-center md:mx-50 my-5'>
+        <div className="dropdown dropdown-start">
+  <div tabIndex={0} role="button" className="btn m-1">Click ⬇️</div>
+  <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+
+    <li onClick={()=> setFilter("All")}><a>All</a></li>
+    <li onClick={()=> setFilter("Call")}><a><IoCallSharp /> Call</a></li>
+    <li onClick={()=> setFilter("Text")}><a><MdTextsms /> Text</a></li>
+    <li onClick={()=> setFilter("Video Call")}><a><MdOutlineVideoCall /> Video Call</a></li>
+  </ul>
+
+</div>
+     
+    </div>
         <div>
-         <h1 className='text-2xl text-[##244D3F] mb-20 text-bold'>Timeline</h1>
+
+         <h1 className='text-2xl text-[##244D3F] mb-5 text-bold'>Timeline</h1>
          <div >
-{call.map((item, index) => {
+{filtered.map((item, index) => {
 
   const getIcon = () => {
-    if (item.type === "Call") return <IoCallSharp />;
-    if (item.type === "Text") return <MdTextsms/>;
-    return <MdOutlineVideoCall />;
+    if (item.type === "Call") 
+      return <IoCallSharp />;
+    if (item.type === "Text")
+       return <MdTextsms/>;
+    else{
+      return <MdOutlineVideoCall />;
+    }
+   
   };
 
   const getTitle = () => {
-    if (item.type === "Call") return `Call with ${item.name}`;
-    if (item.type === "Text") return `Text with ${item.name}`;
-    return `Video Call with ${item.name}`;
+    if (item.type === "Call")
+       return `Call with ${item.name}`;
+    if (item.type === "Text")
+       return `Text with ${item.name}`;
+    else{
+       return `Video Call with ${item.name}`;
+    }
   };
 
   return (
@@ -46,6 +78,7 @@ const Timeline = () => {
 })}
          </div>
         </div>
+        </>
     );
 };
 

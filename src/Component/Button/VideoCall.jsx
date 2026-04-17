@@ -11,7 +11,7 @@ const VideoCall = ({expactedFriend}) => {
             // data
              const callData = {
             name: expactedFriend.name,
-            type: "VideoCall",
+            type: "Video Call",
             time: new Date().toLocaleTimeString()
         };
             setCall([...call , callData])

@@ -7,9 +7,12 @@ export const CallContext= createContext()
 const GlobalContextProvider = ({children}) => {
 
     const [call , setCall] = useState([])
+    const [filter , setFilter] = useState("All")    
     const data ={
         call,
-        setCall
+        setCall,
+        filter,
+        setFilter
     }
 
     return (
