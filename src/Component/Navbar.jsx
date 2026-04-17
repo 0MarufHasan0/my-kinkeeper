@@ -16,45 +16,44 @@ const NavItems = [
 ]
 
     return (
-        <div>
-            <div className="navbar bg-base-100 shadow-sm">
-  <div className="flex-1 px-2">
- <Image 
-  src={navImg}
-  width={200}
-  height={200}
-  alt="KeenKeeper"
-/>
-  </div>
+       <div>
+  <div className="navbar bg-base-100 shadow-sm px-2 sm:px-4 md:px-6">
 
-  <div className="flex-none">
-    <ul className="menu menu-horizontal px-1 gap-2">
-        {
-            NavItems.map((item) => {
-                return (
-                    <li key={item.path} className='font-medium '> 
-
-                    {/* Map NavIcons here  */}
-                    
-                    <NavbLinks href={item.path}>
-                        <span className="flex p-3 items-center  sm:gap-2 text-us sm:text-sm md:text-base ">
-                       {item.icon}
-                      {item.text}
-                      </span>
-                    </NavbLinks>
-
-                    </li>
-                                           
-            )
-        })
-    }
-
-    </ul>
-  </div>
-  {/* Responsive */}
-
+  <div className="flex-1 px-2 flex items-center">
+  <Image 
+    src={navImg}
+    width={200}
+    height={200}
+    alt="KeenKeeper"
+    className="w-[140px] sm:w-[160px] md:w-[200px] h-auto -translate-y-1 sm:translate-y-0"
+  />
 </div>
-        </div>
+
+    <div className="flex-none">
+      <ul className="menu menu-horizontal px-1 gap-1 sm:gap-2 md:gap-3">
+
+        {
+          NavItems.map((item) => {
+            return (
+              <li key={item.path} className='font-medium'>
+
+                <NavbLinks href={item.path}>
+                  <span className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base px-2 py-1 sm:p-3">
+                    {item.icon}
+                    {item.text}
+                  </span>
+                </NavbLinks>
+
+              </li>
+            )
+          })
+        }
+
+      </ul>
+    </div>
+
+  </div>
+</div>
     );
 };
 

@@ -5,10 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { HiOutlineArchiveBoxArrowDown } from 'react-icons/hi2';
-import { IoIosVideocam } from 'react-icons/io';
-import { MdDelete, MdTextsms } from 'react-icons/md';
+
+import { MdDelete } from 'react-icons/md';
 import { RiNotificationSnoozeLine } from 'react-icons/ri';
-import { VscCallOutgoing } from 'react-icons/vsc';
+import { notFound } from 'next/navigation';
+;
 
 
 
@@ -25,6 +26,11 @@ const page = async({params}) => {
     const friends= await friendsData()
     const expactedFriend = friends.find(friend=> friend.id === Number(id))
     console.log (expactedFriend,"friend")
+
+     if (!expactedFriend) {
+    notFound();
+  }
+
     return (
       <div className='container mx-auto mt-5 flex flex-col md:justify-between md:flex-row gap-6 p-6 shadow-md rounded-lg'>
 
@@ -32,28 +38,28 @@ const page = async({params}) => {
   <div className='flex flex-col gap-3'>
     
     <Image
-      src={expactedFriend.picture}
+      src={expactedFriend?.picture}
       width={100}
       height={100}
-      alt={expactedFriend.name}
+      alt={expactedFriend?.name}
       className='rounded-full'
     />
 
     <div
       className={`badge ${
-        expactedFriend.status === "almost due"
+        expactedFriend?.status === "almost due"
           ? "badge-warning text-white"
-          : expactedFriend.status === "overdue"
+          : expactedFriend?.status === "overdue"
           ? "badge-error text-white"
           : "bg-[#244D3F] text-white p-3"
       }`}
     >
-      {expactedFriend.status}
+      {expactedFriend?.status}
     </div>
 
     {/* Tags */}
     <div className="flex flex-wrap gap-2">
-      {expactedFriend.tags?.map((tag, index) => (
+      {expactedFriend?.tags?.map((tag, index) => (
         <div
           key={index}
           className="rounded-lg text-[#244D3F] font-semibold 
@@ -66,11 +72,11 @@ const page = async({params}) => {
 
 
     <p className='text-sm text-[#64748B] mt-3 font-medium italic'>
-      {expactedFriend.bio}
+      {expactedFriend?.bio}
     </p>
 
     <p className='text-sm text-[#64748B] mt-3 font-medium italic'>
-      {expactedFriend.email}
+      {expactedFriend?.email}
     </p>
     
     <div className="stats stats-vertical shadow w-full">
@@ -106,7 +112,7 @@ const page = async({params}) => {
      <div className='  border-r h-20 p-3'>
          <div className=" text-center">
         <div className="stat-value">
-          {expactedFriend.days_since_contact}
+          {expactedFriend?.days_since_contact}
         </div>
         <div className="stat-desc">
           Days Since Contact
@@ -116,7 +122,7 @@ const page = async({params}) => {
  <div className='  border-r h-20 p-3'>
       <div className="text-center">
         <div className="stat-value">
-          {expactedFriend.goal}
+          {expactedFriend?.goal}
         </div>
         <div className="stat-desc">
           Goal (days)
@@ -127,7 +133,7 @@ const page = async({params}) => {
       <div className='  border-r h-20 p-3'>
       <div className="text-center">
         <div className="stat-value">
-          {expactedFriend.next_due_date}
+          {expactedFriend?.next_due_date}
         </div>
         <div className="stat-desc">
           Next Due

@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+​🚀 KeenKeeper
 
-## Getting Started
+​Your personal shelf of meaningful connections.
+​In the digital noise of today, we often lose track of the people who matter most. KeenKeeper is a smart relationship management tool designed to help you nurture your friendships, track your interactions, and ensure no important connection fades away.
 
-First, run the development server:
+​✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+​👥 Relationship Dashboard: A clean, visual overview of your entire social circle with profile cards and status tags.
+​⏳ Smart Reminders: Intelligently tracks your last contact date and categorizes friends into:
+​🟢 On-Track: You're staying connected!
+​🟡 Almost Due: Time to reach out soon.
+​🔴 Overdue: It’s been a while—send a message!
+​
+​📊 Friendship Analytics: Visual representation (Doughnut charts) of your interaction types—be it Calls, Texts, or Video Chats.
+​📜 Interaction Timeline: A dedicated log to keep track of every conversation and the specific time it happened.
+​🎯 Personal Goals: Set custom contact frequencies for each friend based on how close you are.
+​📱 Quick Actions: One-click buttons to initiate Calls, Texts, or Video calls directly from the app.
+​🛠️ Tech Stack
+​Frontend: React.js / Next.js
+​Styling: Tailwind CSS & Lucide Icons
+​Charts: Recharts / Chart.js
+​State Management: API Integration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔗 Live Demo
+​Experience KeenKeeper in action:
+👉 Live Demo  : https://my-kinkeeper-rust.vercel.app/
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+​💡 Why KeenKeeper?
+​"Friends are the family we choose. KeenKeeper ensures that your busy schedule never gets in the way of the people you love."

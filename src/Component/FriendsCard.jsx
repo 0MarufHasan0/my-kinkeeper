@@ -7,8 +7,7 @@ const FriendsCard = ({ friend }) => {
     <Link href={`/${friend.id}`} className="w-full flex justify-center">
       <div
         className="card bg-base-100 w-full max-w-sm sm:max-w-md rounded-2xl shadow-md 
-        transition duration-300 ease-in-out 
-        hover:scale-105 hover:shadow-2xl"
+        transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
       >
         <figure className="px-6 sm:px-10 pt-6 sm:pt-10">
           <Image
